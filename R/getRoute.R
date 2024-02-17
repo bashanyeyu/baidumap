@@ -49,7 +49,7 @@ getRouteXML = function(origin, destination, mode='driving',
     origin_region = get_city(origin_region)
     destination_region = get_city(destination_region)
     ## get xml data
-    serverAddress = 'http://api.map.baidu.com/direction/v1'
+    serverAddress = 'http://api.map.baidu.com/direction/v2/driving'
     rawData = getForm(serverAddress, mode = mode, 
                       origin = origin, destination = destination, 
                       origin_region = origin_region, 
